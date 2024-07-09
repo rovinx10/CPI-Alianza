@@ -63,7 +63,7 @@ if (strlen($_SESSION['alogin']) == "") {
                 <div class="container-fluid">
                     <div class="row page-title-div">
                         <div class="col-md-6">
-                            <h2 class="title">Agregar Estudiante</h2>
+                            <h2 class="title">Añadir Estudiante</h2>
 
                         </div>
 
@@ -75,7 +75,7 @@ if (strlen($_SESSION['alogin']) == "") {
                             <ul class="breadcrumb">
                                 <li><a href="dashboard.php"><i class="fa fa-home"></i> Inicio</a></li>
 
-                                <li class="active">Ingreso de Matricula</li>
+                                <li class="active">Añadir Estudiantes</li>
                             </ul>
                         </div>
 
@@ -96,10 +96,10 @@ if (strlen($_SESSION['alogin']) == "") {
                                     <div class="panel-body">
                                         <?php if ($msg) { ?>
                                             <div class="alert alert-success left-icon-alert" role="alert">
-                                                <strong>Bien hecho! </strong><?php echo htmlentities($msg); ?>
+                                                <strong>Realizado </strong><?php echo htmlentities($msg); ?>
                                             </div><?php } else if ($error) { ?>
                                             <div class="alert alert-danger left-icon-alert" role="alert">
-                                                <strong>Algo salió mal!</strong> <?php echo htmlentities($error); ?>
+                                                <strong>Error</strong> <?php echo htmlentities($error); ?>
                                             </div>
                                         <?php } ?>
                                         <form class="row" method="post">
@@ -153,7 +153,7 @@ if (strlen($_SESSION['alogin']) == "") {
 
 
                                             <div class="form-group col-md-12">
-                                                <button type="submit" name="submit" class="btn btn-success">Agregar</button>
+                                                <button type="submit" name="submit" class="btn btn-success">Guardar</button>
                                             </div>
                                         </form>
 

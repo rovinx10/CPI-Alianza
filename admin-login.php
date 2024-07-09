@@ -18,12 +18,11 @@ if (isset($_POST['login'])) {
       $_SESSION['alogin'] = $_POST['username'];
       echo "<script type='text/javascript'> document.location = 'dashboard.php'; </script>";
    } else {
-
       echo "<script>alert('Invalid Details');</script>";
    }
 }
-
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,71 +39,55 @@ if (isset($_POST['login'])) {
    <!-- USED FOR DEMO HELP - YOU CAN REMOVE IT -->
    <link rel="stylesheet" href="assets/css/main.css" media="screen">
    <script src="assets/js/modernizr/modernizr.min.js"></script>
+   <style>
+      body {
+         background-image: url(assets/images/bg-imagee.jpg);
+         background-color: #3d85ed;
+         background-size: cover;
+         height: 100vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin: 0;
+      }
+      .login-container {
+         background: #3d86ed;
+         padding: 20px;
+         border-radius: 8px;
+         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+   </style>
 </head>
 
-<body class="" style="background-image: url(assets/images/bg-imagee.jpg);
-      background-color: #3d85ed;
-      background-size: cover;
-      height: 100%;
- 
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;">
+<body>
    <div class="main-wrapper">
-      <div class="">
-         <div class="row">
-            <div class="col-md-offset-7 col-lg-5">
-               <section class="section">
-                  <div class="row mt-40">
-                     <div class="col-md-offset-2 col-md-10  pt-50">
-                        <div class="row mt-30 ">
-                           <div class="col-md-11">
-                              <div class="panel login-box" style="    background: #3d86ed;">
-                                 <div class="panel-heading">
-
-                                    <div class="text-center"><br>
-                                       <a href="#">
-                                          <img style="height: 70px" src=""></a>
-                                       <br>
-                                       <h5 style="color: white;"> <strong>Acceso Administrativo</strong></h5>
-                                    </div>
-                                 </div>
-                                 <div class="panel-body p-20">
-                                    <form class="admin-login" method="post">
-                                       <div class="form-group">
-                                          <label for="inputEmail3" class="control-label">Correo</label>
-                                          <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="Correo">
-                                       </div>
-                                       <div class="form-group">
-                                          <label for="inputPassword3" class="control-label">Contraseña</label>
-                                          <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Contraseña">
-                                       </div><br>
-                                       <div class="form-group mt-20">
-                                          <button type="submit" name="login" class="btn login-btn">Acceder</button>
-
-                                       </div>
-                                       <br>
-                                    </form>
-                                 </div>
-                              </div>
-                           </div>
-                           <!-- /.col-md-11 -->
-                        </div>
-                        <!-- /.row -->
-                     </div>
-                     <!-- /.col-md-12 -->
-                  </div>
-                  <!-- /.row -->
-               </section>
+      <div class="login-container">
+         <section class="section">
+            <div class="text-center mb-4">
+               <a href="#">
+                  <img style="height: 70px" src="assets/images/alianza.png" alt="Logo">
+               </a>
+               <h5 style="color: white;"> <strong>Acceso Admin</strong></h5>
             </div>
-            <!-- /.col-md-6 -->
-         </div>
-         <!-- /.row -->
+            <form class="admin-login" method="post">
+               <div class="form-group">
+                  <label for="inputEmail3" class="control-label">USUARIO</label>
+                  <input type="text" name="username" class="form-control" id="inputEmail3" placeholder="Correo">
+               </div>
+               <div class="form-group">
+                  <label for="inputPassword3" class="control-label">CONTRASEÑA</label>
+                  <input type="password" name="password" class="form-control" id="inputPassword3" placeholder="Contraseña">
+               </div>
+               <br>
+               <div class="form-group mt-20">
+                  <button type="submit" name="login" class="btn btn-primary">Acceder</button>
+               </div>
+               <br>
+            </form>
+            <a href="index.php" class="btn btn-secondary">Volver a Inicio</a>
+         </section>
       </div>
-      <!-- /. -->
    </div>
-   <!-- /.main-wrapper -->
    <!-- ========== COMMON JS FILES ========== -->
    <script src="assets/js/jquery/jquery-2.2.4.min.js"></script>
    <script src="assets/js/jquery-ui/jquery-ui.min.js"></script>
@@ -120,8 +103,6 @@ if (isset($_POST['login'])) {
 
       });
    </script>
-
-
    <!-- ========== ADD custom.js FILE BELOW WITH YOUR CHANGES ========== -->
 </body>
 

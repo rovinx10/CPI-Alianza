@@ -73,10 +73,10 @@ if (strlen($_SESSION['alogin']) == "") {
                                     </div>
                                     <?php if ($msg) { ?>
                                         <div class="alert alert-success left-icon-alert" role="alert">
-                                            <strong>Proceso Exitoso! </strong><?php echo htmlentities($msg); ?>
+                                            <strong>Realizado </strong><?php echo htmlentities($msg); ?>
                                         </div><?php } else if ($error) { ?>
                                         <div class="alert alert-danger left-icon-alert" role="alert">
-                                            <strong>Hubo inconvenientes! </strong> <?php echo htmlentities($error); ?>
+                                            <strong>Error </strong> <?php echo htmlentities($error); ?>
                                         </div>
                                     <?php } ?>
 
@@ -93,24 +93,24 @@ if (strlen($_SESSION['alogin']) == "") {
                                             foreach ($results as $result) {   ?>
 
                                                 <div class="form-group has-success">
-                                                    <label for="success" class="control-label">Nombre de Año</label>
+                                                    <label for="success" class="control-label">Nombre de Curso</label>
                                                     <div class="">
                                                         <input type="text" name="classname" value="<?php echo htmlentities($result->ClassName); ?>" required="required" class="form-control" id="success">
-                                                        <span class="help-block">Eg- Third, Fouth,Sixth etc</span>
+                                                        <span class="help-block"></span>
                                                     </div>
                                                 </div>
                                                 <div class="form-group has-success">
                                                     <label for="success" class="control-label">Nombre de Año en Número</label>
                                                     <div class="">
                                                         <input type="number" name="classnamenumeric" value="<?php echo htmlentities($result->ClassNameNumeric); ?>" required="required" class="form-control" id="success">
-                                                        <span class="help-block">Ejemplo - 1,2,4,5 etc</span>
+                                                        <span class="help-block"></span>
                                                     </div>
                                                 </div>
                                                 <div class="form-group has-success">
-                                                    <label for="success" class="control-label">Sección</label>
+                                                    <label for="success" class="control-label">Paralelo</label>
                                                     <div class="">
                                                         <input type="text" name="section" value="<?php echo htmlentities($result->Section); ?>" class="form-control" required="required" id="success">
-                                                        <span class="help-block">Ejemplo - A,B,C etc</span>
+                                                        <span class="help-block"></span>
                                                     </div>
                                                 </div>
                                         <?php }

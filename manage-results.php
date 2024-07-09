@@ -56,10 +56,10 @@ if (strlen($_SESSION['alogin']) == "") {
                                     </div>
                                     <?php if ($msg) { ?>
                                         <div class="alert alert-success left-icon-alert" role="alert">
-                                            <strong>Proceso Correcto! </strong><?php echo htmlentities($msg); ?>
+                                            <strong>Realizado </strong><?php echo htmlentities($msg); ?>
                                         </div><?php } else if ($error) { ?>
                                         <div class="alert alert-danger left-icon-alert" role="alert">
-                                            <strong>Algo salió mal! </strong> <?php echo htmlentities($error); ?>
+                                            <strong>Error </strong> <?php echo htmlentities($error); ?>
                                         </div>
                                     <?php } ?>
                                     <div class="panel-body p-20">

@@ -97,7 +97,7 @@ if (strlen($_SESSION['alogin']) == "") {
                 <div class="container-fluid">
                     <div class="row page-title-div">
                         <div class="col-md-6">
-                            <h2 class="title">Agregar Nota</h2>
+                            <h2 class="title">Añadir Nota</h2>
 
                         </div>
 
@@ -109,7 +109,7 @@ if (strlen($_SESSION['alogin']) == "") {
                             <ul class="breadcrumb">
                                 <li><a href="dashboard.php"><i class="fa fa-home"></i> Inicio</a></li>
 
-                                <li class="active">Agregar Nota</li>
+                                <li class="active">Añadir Nota</li>
                             </ul>
                         </div>
 
@@ -126,10 +126,10 @@ if (strlen($_SESSION['alogin']) == "") {
                                     <div class="panel-body">
                                         <?php if ($msg) { ?>
                                             <div class="alert alert-success left-icon-alert" role="alert">
-                                                <strong>Proceso Correcto! </strong><?php echo htmlentities($msg); ?>
+                                                <strong>Realizado </strong><?php echo htmlentities($msg); ?>
                                             </div><?php } else if ($error) { ?>
                                             <div class="alert alert-danger left-icon-alert" role="alert">
-                                                <strong>Algo salió mal! </strong> <?php echo htmlentities($error); ?>
+                                                <strong>Error </strong> <?php echo htmlentities($error); ?>
                                             </div>
                                         <?php } ?>
                                         <form class="" method="post">
@@ -170,7 +170,7 @@ if (strlen($_SESSION['alogin']) == "") {
 
 
                                             <div class="form-group">
-                                                <button type="submit" name="submit" id="submit" class="btn btn-success">Mostrar Resultados</button>
+                                                <button type="submit" name="submit" id="submit" class="btn btn-success">Mostrar/Añadir Calificación</button>
 
                                             </div>
                                         </form>

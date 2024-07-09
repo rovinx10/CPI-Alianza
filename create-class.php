@@ -40,7 +40,7 @@ if (strlen($_SESSION['alogin']) == "") {
                 <div class="container-fluid">
                     <div class="row page-title-div">
                         <div class="col-md-6">
-                            <h2 class="title">Crear Año</h2>
+                            <h2 class="title">Añadir Curso</h2>
                         </div>
 
                     </div>
@@ -49,8 +49,8 @@ if (strlen($_SESSION['alogin']) == "") {
                         <div class="col-md-6">
                             <ul class="breadcrumb">
                                 <li><a href="dashboard.php"><i class="fa fa-home"></i> Inicio</a></li>
-                                <li><a href="#">Año</a></li>
-                                <li class="active">Crear Año</li>
+                                <li><a href="#">Gestión de Cursos</a></li>
+                                <li class="active">Añadir Curso</li>
                             </ul>
                         </div>
 
@@ -71,15 +71,15 @@ if (strlen($_SESSION['alogin']) == "") {
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h5>Crear Año</h5>
+                                            <h5>Añadir Curso</h5>
                                         </div>
                                     </div>
                                     <?php if ($msg) { ?>
                                         <div class="alert alert-success left-icon-alert" role="alert">
-                                            <strong>Bien Hecho</strong><?php echo htmlentities($msg); ?>
+                                            <strong>Realizado</strong><?php echo htmlentities($msg); ?>
                                         </div><?php } else if ($error) { ?>
                                         <div class="alert alert-danger left-icon-alert" role="alert">
-                                            <strong>Hubo un problema</strong> <?php echo htmlentities($error); ?>
+                                            <strong>Error</strong> <?php echo htmlentities($error); ?>
                                         </div>
                                     <?php } ?>
 
@@ -87,30 +87,30 @@ if (strlen($_SESSION['alogin']) == "") {
 
                                         <form method="post">
                                             <div class="form-group has-success">
-                                                <label for="success" class="control-label">Nombre Año</label>
+                                                <label for="success" class="control-label">Nombre Curso</label>
                                                 <div class="">
                                                     <input type="text" name="classname" class="form-control" required="required" id="success">
-                                                    <span class="help-block">Puedes poner Primero, Segundo o algo así</span>
+                                                    <span class="help-block">(Nombre del curso)</span>
                                                 </div>
                                             </div>
                                             <div class="form-group has-success">
                                                 <label for="success" class="control-label">Año en Número</label>
                                                 <div class="">
                                                     <input type="number" name="classnamenumeric" required="required" class="form-control" id="success">
-                                                    <span class="help-block">Puedes poner 1,2,3 ...</span>
+                                                    <span class="help-block">(1, 2, 3 ...)</span>
                                                 </div>
                                             </div>
                                             <div class="form-group has-success">
-                                                <label for="success" class="control-label">Sección</label>
+                                                <label for="success" class="control-label">Paralelo</label>
                                                 <div class="">
                                                     <input type="text" name="section" class="form-control" required="required" id="success">
-                                                    <span class="help-block">Puedes poner A, B, C ...</span>
+                                                    <span class="help-block">(A, B) ...</span>
                                                 </div>
                                             </div>
                                             <div class="form-group has-success">
 
                                                 <div class="">
-                                                    <button type="submit" name="submit" class="btn btn-success ">Submit</button>
+                                                    <button type="submit" name="submit" class="btn btn-success ">Guardar</button>
                                                 </div>
 
 

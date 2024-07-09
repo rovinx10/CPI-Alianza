@@ -43,6 +43,7 @@
   <div class="jumbotron">
     <div class="container">
       <h1 class="display-4"></h1>
+      <p class="lead"></p>
     </div>
   </div>
 
@@ -63,6 +64,7 @@
                 <input type="password" class="form-control" id="password" name="password" placeholder="Ingrese su contraseña">
               </div>
               <button type="submit" name="login" class="btn btn-primary">ACCEDER</button>
+              <a href="admin-login.php" class="btn btn-success">INICIO DE ADMIN</a>
             </form>
           </div>
         </div>
@@ -99,7 +101,7 @@
       $_SESSION['alogin'] = $_POST['username'];
       echo "<script type='text/javascript'> document.location = 'dashboard.php'; </script>";
     } else {
-      echo "<script>alert('Invalid Details');</script>";
+      echo "<script>alert('Detalles inválidos');</script>";
     }
   }
   ?>

@@ -91,7 +91,7 @@ if (strlen($_SESSION['alogin']) == "") {
 
                                             <div class="form-group">
 
-                                                <button type="submit" name="submit" class="btn btn-success">Enviar</button>
+                                                <button type="submit" name="submit" class="btn btn-success">Guardar</button>
 
                                             </div>
                                         </form>

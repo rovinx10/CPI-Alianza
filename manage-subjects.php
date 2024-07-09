@@ -56,10 +56,10 @@ if (strlen($_SESSION['alogin']) == "") {
                                     </div>
                                     <?php if ($msg) { ?>
                                         <div class="alert alert-success left-icon-alert" role="alert">
-                                            <strong>Bien hecho!</strong><?php echo htmlentities($msg); ?>
+                                            <strong>Realizado</strong><?php echo htmlentities($msg); ?>
                                         </div><?php } else if ($error) { ?>
                                         <div class="alert alert-danger left-icon-alert" role="alert">
-                                            <strong>Hubo un inconveniente!</strong> <?php echo htmlentities($error); ?>
+                                            <strong>Error</strong> <?php echo htmlentities($error); ?>
                                         </div>
                                     <?php } ?>
                                     <div class="panel-body p-20">
@@ -71,7 +71,6 @@ if (strlen($_SESSION['alogin']) == "") {
                                                     <th>Nombre Materia</th>
                                                     <th>Código Materia</th>
                                                     <th>Fecha Creación</th>
-                                                    <th>Fecha Actualización</th>
                                                     <th>Acción</th>
                                                 </tr>
                                             </thead>
@@ -88,7 +87,6 @@ if (strlen($_SESSION['alogin']) == "") {
                                                             <td><?php echo htmlentities($result->SubjectName); ?></td>
                                                             <td><?php echo htmlentities($result->SubjectCode); ?></td>
                                                             <td><?php echo htmlentities($result->Creationdate); ?></td>
-                                                            <td><?php echo htmlentities($result->UpdationDate); ?></td>
                                                             <td>
                                                                 <a href="edit-subject.php?subjectid=<?php echo htmlentities($result->id); ?>" class="btn btn-info"><i class="fa fa-edit" title="Edit Record"></i> </a>
 

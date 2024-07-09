@@ -90,10 +90,10 @@ if (strlen($_SESSION['alogin']) == "") {
                                     <div class="panel-body">
                                         <?php if ($msg) { ?>
                                             <div class="alert alert-success left-icon-alert" role="alert">
-                                                <strong>Bien hecho! </strong><?php echo htmlentities($msg); ?>
+                                                <strong>Realizado </strong><?php echo htmlentities($msg); ?>
                                             </div><?php } else if ($error) { ?>
                                             <div class="alert alert-danger left-icon-alert" role="alert">
-                                                <strong>Algo salió mal!</strong> <?php echo htmlentities($error); ?>
+                                                <strong>Error</strong> <?php echo htmlentities($error); ?>
                                             </div>
                                         <?php } ?>
                                         <form class="row" method="post">
@@ -115,7 +115,7 @@ if (strlen($_SESSION['alogin']) == "") {
                                                 <input type="email" name="emailid" class="form-control" id="email" required="required" autocomplete="off">
                                             </div>
                                             <div class="form-group col-md-12">
-                                                <button type="submit" name="submit" class="btn btn-success">Agregar</button>
+                                                <button type="submit" name="submit" class="btn btn-success">Guardar</button>
                                             </div>
                                         </form>
 

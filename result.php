@@ -137,7 +137,7 @@ include('includes/config.php');
 
                                                         <?php } else { ?>
                                                             <div class="alert alert-warning left-icon-alert" role="alert">
-                                                                <strong>Importante!</strong> Aun no se han declarado tus resultados
+                                                                <strong>Realizado</strong> Aun no se han declarado tus resultados
                                                             <?php }
                                                             ?>
                                                             </div>
@@ -145,7 +145,7 @@ include('includes/config.php');
                                                     } else { ?>
 
                                                             <div class="alert alert-danger left-icon-alert" role="alert">
-                                                                strong>Hubo inconvenientes!</strong>
+                                                                <strong>Error</strong>
                                                             <?php
                                                             echo htmlentities("ID Roll inválido");
                                                         }

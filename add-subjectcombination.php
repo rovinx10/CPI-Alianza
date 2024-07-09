@@ -40,7 +40,7 @@ if (strlen($_SESSION['alogin']) == "") {
                 <div class="container-fluid">
                     <div class="row page-title-div">
                         <div class="col-md-6">
-                            <h2 class="title">Agregar Combinación de Materia</h2>
+                            <h2 class="title">Gestionar Relación Materias</h2>
 
                         </div>
 
@@ -52,7 +52,7 @@ if (strlen($_SESSION['alogin']) == "") {
                             <ul class="breadcrumb">
                                 <li><a href="dashboard.php"><i class="fa fa-home"></i> Inicio</a></li>
                                 <li> Materias</li>
-                                <li class="active">Agregar Combinación de Materia</li>
+                                <li class="active">Gestionar Relación Materias</li>
                             </ul>
                         </div>
 
@@ -67,23 +67,23 @@ if (strlen($_SESSION['alogin']) == "") {
                                 <div class="panel">
                                     <div class="panel-heading">
                                         <div class="panel-title">
-                                            <h5>Agregar Combinación de Materia</h5>
+                                            <h5>Asignar Relación de Materias</h5>
                                         </div>
                                     </div>
                                     <div class="panel-body">
                                         <?php if ($msg) { ?>
                                             <div class="alert alert-success left-icon-alert" role="alert">
-                                                <strong>Bien hecho!</strong><?php echo htmlentities($msg); ?>
+                                                <strong>Realizado</strong><?php echo htmlentities($msg); ?>
                                             </div><?php } else if ($error) { ?>
                                             <div class="alert alert-danger left-icon-alert" role="alert">
-                                                <strong>Oh snap!</strong> <?php echo htmlentities($error); ?>
+                                                <strong>Error</strong> <?php echo htmlentities($error); ?>
                                             </div>
                                         <?php } ?>
                                         <form class="" method="post">
                                             <div class="form-group">
-                                                <label for="default" class="control-label">Año</label>
+                                                <label for="default" class="control-label">Curso</label>
                                                 <select name="class" class="form-control" id="default" required="required">
-                                                    <option value="">Selecciona año</option>
+                                                    <option value="">Selecciona Curso</option>
                                                     <?php $sql = "SELECT * from tblclasses";
                                                     $query = $dbh->prepare($sql);
                                                     $query->execute();
@@ -114,7 +114,7 @@ if (strlen($_SESSION['alogin']) == "") {
 
 
                                             <div class="form-group">
-                                                <button type="submit" name="submit" class="btn btn-success">Agregar</button>
+                                                <button type="submit" name="submit" class="btn btn-success">Guardar</button>
                                             </div>
                                         </form>
 
